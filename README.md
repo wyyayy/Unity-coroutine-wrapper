@@ -31,3 +31,11 @@ A simple but useful unity coroutine wrapper
 
     /// Stop task
     myTask.Stop();
+    
+    /// Yiled a task
+    IEnumerator _doTestYieldTask()
+    {
+        ....
+        yield return myTask.coroutine;
+        ....
+    }
